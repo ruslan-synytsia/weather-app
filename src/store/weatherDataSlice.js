@@ -4,7 +4,7 @@ export const fetchGetData = createAsyncThunk(
     'data/fetchWeather', 
     async (cityName, { rejectWithValue }) => {
         try {
-            const geoRes = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=7c10f997486d4d739c89341c95b8f0b9`)
+            const geoRes = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=7c10f997486d4d739c89341c95b8f0b9`)
             
             if (geoRes.ok) {
                 const geoData = await geoRes.json()
