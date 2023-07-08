@@ -1,0 +1,34 @@
+.Chart {
+    background-image: url('../../images/backgrounds/main2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.Chart_button,
+.Chart_header,
+.Chart_content {
+    width: 100%;
+}
+
+.Chart_button {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.Chart_button button {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+}
+
+.Chart_header {
+    margin-bottom: 2rem;
+}
+
+.Chart_content {
+    overflow: hidden;
+}

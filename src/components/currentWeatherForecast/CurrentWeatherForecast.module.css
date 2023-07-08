@@ -1,0 +1,59 @@
+.Current {
+    width: 100%;
+}
+
+.Current_finder {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto 2rem auto;
+    border-radius: 1.5rem;
+    background-color: rgba(255, 255, 255, .125);
+    padding: .5rem 0;
+}
+
+.Current_finder input {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    
+    background-color: transparent;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0 .5rem;
+}
+
+.Current_finder input::placeholder {
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.Current_finder button {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+}
+
+.Current_common_data {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.Current_common_data span {
+    text-transform: capitalize;
+}
+
+.Current_temperature {
+    font-size: 7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,47 @@
+.Five_days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .125);
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.Five_days_temp {
+    font-size: 1.5rem;
+}
+
+.Five_days > ul > li {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Five_days > ul > li > h2 {
+    font-weight: 400;
+    text-align: left;
+}
+
+.Five_days > ul > li > span {
+    text-align: center;
+}
+
+.Five_days > ul > li > div {
+    text-align: right;
+}
+
+.Five_days_btn {
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, .25);
+    border-radius: 2rem;
+    background-color: transparent;
+    padding: .5rem 2rem;
+    transition: background-color 1s ease;
+}
+
+.Five_days_btn:hover {
+    background-color: rgba(255, 255, 255, .1);
+}

@@ -1,0 +1,59 @@
+.Welcome {
+    color: rgba(255, 255, 255, .75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background-image: url('../../images/backgrounds/welcome2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Welcome_header {
+    border: 2px solid rgba(255, 255, 255, .75);
+    padding: 5rem 7rem;
+}
+
+.Welcome h1 {
+    margin-bottom: 1rem;
+}
+
+.Welcome_finder {
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    padding: 0.5rem;
+}
+
+.Welcome_finder input {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    
+    background-color: transparent;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0 .5rem;
+}
+
+.Welcome_finder input::placeholder {
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.Welcome_finder button {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .75);
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+}

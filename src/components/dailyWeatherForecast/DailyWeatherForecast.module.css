@@ -1,0 +1,56 @@
+.Daily_date {
+    margin-bottom: .5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.Daily_today_forecast {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.Daily_today_forecast h2,
+.Daily_temperatures {
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+.Daily_by_hours {
+    width: 100%;
+}
+
+.Daily_by_hours ul {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    padding: 1rem 0 1rem 0;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, .125);
+}
+
+.Daily_by_hours ul li {
+    display: flex;
+    flex-direction: column;
+    width: 12.5%;
+    margin: 0 .75rem;
+}
+
+.Daily_by_hours .Daily_time,
+.Daily_by_hours .Daily_icon,
+.Daily_by_hours .Daily_temp {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 0 0.25rem 0;
+    width: 100%;
+}
+
+.Daily_max_temp {
+    margin-right: 2rem;
+}

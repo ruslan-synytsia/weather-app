@@ -1,0 +1,14 @@
+.chart {
+    width: 100%;
+    overflow-x: hidden;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .125);
+    height: 300px;
+}
+
+.chart svg {
+    border: 1pz solid #fff;
+}
