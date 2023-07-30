@@ -1,16 +1,16 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+nvimport { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 export const fetchGetData = createAsyncThunk(
     'data/fetchWeather', 
     async (cityName, { rejectWithValue }) => {
         try {
-            const geoRes = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${REACT_APP_WEATHER_API_TOKEN}`)
+            const geoRes = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${env.process.REACT_APP_WEATHER_API_TOKEN}`)
             
             if (geoRes.ok) {
                 const geoData = await geoRes.json()
                 const { lat, lon } = geoData[0]
                 try {
-                    const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${REACT_APP_WEATHER_API_TOKEN}`)
+                    const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${env.process.REACT_APP_WEATHER_API_TOKEN}`)
                     if (res.ok) {
                         const data = await res.json()
                         const { city, list } = data
