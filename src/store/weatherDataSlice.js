@@ -1,4 +1,4 @@
-nvimport { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { createSlice, createAsyncThunk, rejectWithValue } from '@reduxjs/toolkit'
 
 export const fetchGetData = createAsyncThunk(
     'data/fetchWeather', 
@@ -55,5 +55,5 @@ export const weatherDataSlice = createSlice({
     }
 })
 
-// export const { getWeatherData } = weatherDataSlice.actions
+export const { getWeatherData } = weatherDataSlice.actions
 export default weatherDataSlice.reducer
