@@ -16,7 +16,7 @@ export const WeatherForecast5Days = (props) => {
                                     <h2>{`${daysOfWeek[new Date(li.date * 1000).getDay()]}`}</h2>
                                     <span><img src={`https://openweathermap.org/img/wn/${li.icon}.png`} alt="icon" /></span>
                                     <div className={style.Five_days_temperatures}>
-                                        <span className={style.Five_days_temp}>{li.averageTemp}&deg;</span>
+                                        <span className={style.Five_days_temp}>{li.maxTemp}&deg;</span>
                                     </div>
                                 </li>
                             )
