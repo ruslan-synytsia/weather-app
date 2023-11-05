@@ -1,6 +1,6 @@
 import style from './summaryInfo.module.css'
 import { Compass } from '../charts/compass/compass'
-import { SunriseSunsetChart } from '../../components/charts/sunriseSunsetChart/sunriseSunsetChart'
+import { SunriseSunsetChart } from '../charts/sunriseSunsetChart/sunriseSunsetChart'
 
 export const SummaryInfo = (props) => {
     const {

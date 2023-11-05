@@ -7,6 +7,7 @@ import { TemperatureChart5days } from '../../components/charts/temperatureChart5
 
 export const ChartForecast5Days = () => {
     const data = useSelector(state => state.weatherData.data.list)
+
     return (
         <div className={style.Chart}>
             <div className={'container'}>

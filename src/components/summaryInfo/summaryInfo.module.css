@@ -2,10 +2,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 1rem;
-    width: 100%;
+    gap: .5rem;
+
     height: 15rem;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .SummaryInfo_wind,
@@ -58,5 +59,14 @@
 .SummaryInfo_common_item {
     display: flex;
     justify-content: space-between;
+    
     width: 100%;
 }
+
+@media only screen and (max-width: 720px) {
+    .SummaryInfo_wind,
+    .SummaryInfo_sunrise_sunset,
+    .SummaryInfo_common {
+        padding: 0 .25rem;
+    }
+  }

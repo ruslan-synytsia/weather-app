@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react'
 import style from './DailyWeatherForecast.module.css'
 import { setupSwipeScroll } from '../../components/functions/horizontalSwipe/horizontalSwipe'
 
